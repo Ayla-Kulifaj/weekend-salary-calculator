@@ -11,6 +11,8 @@
   </header>
   <main>
     <h2>Add Employee</h2>
+
+    <!-- Using form and input elements to create input fields -->
     <form>
 
       <input
@@ -43,13 +45,27 @@
         placeholder="Annual Salary"
         type="text"
       >
-      <button data-testid="submitButton"> onclick="createTodo(event)">Submit</button>
+      <button onclick="addEmployee(event)">Submit</button> <data-testid="submitButton">
+        <!-- to create a submit button -->
+   </form>
    
-
-    </form>
-    <h2>Employees</h2>
+   <!-- creating rows -->
+   <h2>Employees</h2>
+   <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID</th>
+        <th>Job Title</th>
+        <th>Annual Salary</th>
+      </tr>
+    </thead>
+    <tbody id="Employees">
+    </tbody>
   </main>
-  <footer>
+  <!-- giving the footer an id and -->
+  <footer id="theFooter">
     <p>Total Monthly</p>
   </footer>
 </body>
