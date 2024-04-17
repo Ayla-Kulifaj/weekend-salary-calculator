@@ -1,5 +1,6 @@
 
 console.log("javascript sourced!")
+let monthlyCost = 0;
 
 function addEmployee(event) {
     event.preventDefault();
@@ -27,4 +28,26 @@ let newRow= `
 
 let table = document.getElementById("table")
 table.innerHTML+=newRow
+
+
+
+//footer and overbudget
+
+// let footer=document.getElementById("theFooter")
+// footer.innerHTML
+
+// monthlyCost += annualSalary/12;
+
+// if (monthlyCost > 20000) {
+// ?
+
+
+// clear form
+
+firstName = document.getElementById('firstName').value=''
+lastName = document.getElementById('lastName').value=''
+id = document.getElementById('id').value=''
+title= document.getElementById('title').value =''
+annualSalary = document.getElementById('annualSalary').value=''
+
 }
