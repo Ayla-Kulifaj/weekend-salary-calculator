@@ -27,7 +27,7 @@ let newRow= `
 // console.log("newRow is: ", newRow)
 
 let table = document.getElementById("table")
-table.innerHTML+=newRow
+table.innerHTML+=newRow;
 
 
 
@@ -35,10 +35,14 @@ table.innerHTML+=newRow
 monthlyCost += annualSalary/12;
 let footer=document.getElementById("monthlyCost")
 footer.innerHTML=monthlyCost
+console.log(monthlyCost)
 
+if (monthlyCost > 20000) {
+    console.log("Over Budget")
+   let overbudget= document.getElementById("theFooter")
+   overbudget.classList.add('over-budget')
 
-// if (monthlyCost > 20000) {
-// ?
+}
 
 
 // clear form
