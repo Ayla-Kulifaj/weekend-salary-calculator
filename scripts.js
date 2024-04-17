@@ -24,4 +24,7 @@ let newRow= `
 </tr>
 `
 // console.log("newRow is: ", newRow)
+
+let table = document.getElementById("table")
+table.innerHTML+=newRow
 }
