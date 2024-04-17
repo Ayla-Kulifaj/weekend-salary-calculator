@@ -22,6 +22,7 @@ let newRow= `
 <td>${id}</td>
 <td>${title}</td>
 <td>${annualSalary}</td>
+<td> <button onclick="deleteRow(event)" data-testid="deleteButton" id="deleteButton">Delete</button> </td>
 </tr>
 `
 // console.log("newRow is: ", newRow)
@@ -54,3 +55,17 @@ title= document.getElementById('title').value =''
 annualSalary = document.getElementById('annualSalary').value=''
 
 }
+
+
+function deleteRow(event) {
+    // deleting the closest 'tr'
+    let rowToDelete = event.target.closest('tr');
+    rowToDelete.remove();
+}
+
+
+//this is the same way of going about deleting a row..
+// function deleteRow(event) {
+//     let deleteThis= event.target.parentElement.parentElement
+//     deleteThis.remove();
+// }

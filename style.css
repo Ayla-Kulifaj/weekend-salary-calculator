@@ -3,4 +3,19 @@ body {
 }
 .over-budget {
     color: red;
+    font-weight: bold;
+}
+table, th, td {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+h1, h2, form {
+    text-align: center;
+}
+footer {
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: right;
 }
