@@ -32,11 +32,10 @@ table.innerHTML+=newRow
 
 
 //footer and overbudget
+monthlyCost += annualSalary/12;
+let footer=document.getElementById("monthlyCost")
+footer.innerHTML=monthlyCost
 
-// let footer=document.getElementById("theFooter")
-// footer.innerHTML
-
-// monthlyCost += annualSalary/12;
 
 // if (monthlyCost > 20000) {
 // ?
